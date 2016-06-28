@@ -1,0 +1,44 @@
+@import 'reset';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+@import 'variables';
+@import 'mixins';
+
+*,
+*:before,
+*:after {
+  @include border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at top right, #DADADA, #F5F5F5 50%);;
+  color: #545454;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+	position: relative;
+}
+
+@import 'grid';
+@import 'header';
+@import 'search';
+@import 'results';
+@import 'result';
+@import 'explanation';
+@import 'links';
+@import 'link';
+@import 'songView';
+@import 'listenLinks';
+@import 'modal';
+@import 'preferences';
+@import 'preferences-group';
+@import 'footer';
+@import 'promo';
+@import 'preferencesHighlight';

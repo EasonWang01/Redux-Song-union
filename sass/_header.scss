@@ -1,0 +1,114 @@
+.top-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: $top-strip-height;
+  background: linear-gradient(to left, $color-secondary, $color-main);
+  animation: gradientFade 2s infinite;
+}
+
+header {
+  background-color: white;
+  border-radius: 0;
+  height: $header-height;
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+header .logo-container {
+  display: table;
+  float: left;
+  height: $header-height;
+	margin-left: 16px;
+	padding-top: $top-strip-height;
+}
+
+header .logo {
+  color: $color-main;
+  display: table-cell;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+header .logo .tagline {
+  color: $color-dark-grey;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+}
+
+header .nav-container {
+	display: table;
+	float: right;
+	height: $header-height;
+	margin-right: 16px;
+}
+
+header .nav {
+	display: table-cell;
+	vertical-align: middle;
+
+	li {
+		float: left;
+		margin-left: 30px;
+		color: #484848;
+		font-size: 16px;
+	}
+
+	li > a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	li > a:hover {
+		color: $color-main;
+	}
+
+
+}
+
+@media #{$breakpoint-small} {
+
+  .top-strip {
+    height: $top-strip-height-small;
+  }
+
+  header {
+    height: $header-height-small;
+    line-height: $header-height-small;
+  }
+
+  header .logo-container {
+    height: $header-height-small;
+		padding-top: $top-strip-height-small;
+  }
+
+  header .logo {
+    font-size: 23px;
+    line-height: 16px;
+  }
+
+  header .logo .tagline {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+	header .nav-container {
+		height: $header-height-small;
+	}
+
+	header .nav li {
+		font-size: 12px;
+		margin-left: 12px;
+	}
+
+  header button {
+    font-size: 18px;
+    line-height: $header-height-small;
+  }
+
+}
