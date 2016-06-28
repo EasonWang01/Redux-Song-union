@@ -1,20 +1,9 @@
-# Songlink
+####1.npm install
 
-Songlink is a web application that makes it possible to share songs with anyone, no matter what music app you (or they) use. 
+####2.Go to mongodb bin folder `C:\Program Files\Mongodb\Server\3.2\bin` then `mongod --dbpath ../songlink/`
 
-Head over to [songlink](http://songl.ink) to create a link for a song you'd like to share. Then, share this link on Facebook, Twitter, email, wherever! The recipient of the link will be able to open the song in the music app that they know and love.
+####3.css:sass:dev
 
-#### Technologies used in songlink
-
-- Node.js/Express
-- React.js
-- Redux
-- Webpack
-- Sass
-- Cloudfront CDN
-- Mustache templating
-- Mocha/Chai
-
-If you have any questions or comments, please contact songlinkapp@gmail.com.
+####4.node server/server.js
 
 
